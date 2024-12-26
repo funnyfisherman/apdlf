@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APDLS - Association de la Pêche à la Dynamite du Lac Feuquières</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Association de la Pêche à la Dynamite du Lac Feuquières</h1>
+    </header>
+
+    <main>
+        <section class="press-release">
+            <h2>Nouvelle association au Lac Feuquières : un projet explosif</h2>
+            <p>
+                Un groupe lié à Al Boivin et au clan du Pic Turmel a annoncé aujourd'hui la création de l'Association
+                de la Pêche à la Dynamite du Lac Feuquières (APDLS). Leur objectif : faire pression sur le ministère 
+                des Forêts, de la Faune et des Parcs du Québec (MFFP) pour légaliser la pêche à la dynamite sur le lac.
+            </p>
+            <p>
+                Les membres intéressés peuvent rejoindre l'APDLS pour seulement 30$ par année. Tous les détails et inscriptions
+                sont disponibles sur le site officiel de l'association : <a href="#membership">apdls.org/membership</a>.
+            </p>
+            <p>Agence Interpress, 25 décembre 2024</p>
+        </section>
+
+        <section class="mission-vision">
+            <h2>Notre Mission</h2>
+            <p>Promouvoir des pratiques innovantes et dynamiques de pêche.</p>
+            <h2>Notre Vision</h2>
+            <p>Transformer le Lac Feuquières en une référence mondiale en matière de pêche audacieuse.</p>
+        </section>
+
+        <section class="membership">
+            <h2>Rejoignez-nous</h2>
+            <p>Frais d'adhésion : 30$ par année.</p>
+            <button id="join-btn">Devenir Membre</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 APDLS. Tous droits réservés. | <a href="#membership">Inscriptions</a></p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="membership-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Formulaire d'inscription</h2>
+            <form>
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Adresse email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="payment">Méthode de paiement :</label>
+                <select id="payment" name="payment">
+                    <option value="credit-card">Carte de crédit</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
